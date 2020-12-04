@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+
+<div class="fondos">
+    <div class="textos">
+  
+            <h1>Scooter Line</h1>
+
+        
+        <h2>Vive la experiencia</h2>
+        <form action="">
+            {% if user.is_authenticated %}
+            <a  href="{% url 'agregar' user.username %}" class="boton" >Iniciar Viaje</a>
+            
+       
+            {% endif %}
+        </form>
+       
+            
+        
+        
+    </div>
+</div>
+
+
+
+
+{% endblock %}

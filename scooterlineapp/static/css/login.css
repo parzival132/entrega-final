@@ -1,0 +1,61 @@
+
+body{
+    background-image: url(../imagenes/fondo5.jpg);
+    height: 1200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.container{
+    margin-top: 300px;
+}
+.boton {
+    width: 100%;
+}
+
+#ingresar{
+    background: linear-gradient(360deg,#013d3d,#024352);
+    opacity: 0.8;
+    transition-duration: 0.9s;
+}
+
+#ingresar:hover{
+    transition-duration: 0.9s;
+    background: linear-gradient(360deg, #026074, #7D7F7F );
+    opacity: 1;
+}
+
+#regresar{
+    background: linear-gradient(360deg,#024352,#013d3d);
+    opacity: 0.8;
+    transition-duration: 0.9s;
+}
+
+#regresar:hover{
+    transition-duration: 0.9s;
+    background: linear-gradient(360deg, #7D7F7F,#026074 );
+    opacity: 1;
+}  
+
+
+.card{
+  
+    background-color: darkslategray;
+}
+
+label {
+    color: floralwhite;
+}
+h3{
+    color: floralwhite;
+}
+
+.boton {
+    width: 100%;
+}
+p {
+ color: ghostwhite;
+}

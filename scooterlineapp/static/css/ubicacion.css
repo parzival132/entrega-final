@@ -1,0 +1,20 @@
+body{
+    background-image: url(../imagenes/ubicacion1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.card{
+     background-color: darkslategray;
+ 
+}
+
+.card{
+    opacity: 0.9;
+
+}
+.card:hover{
+    opacity: 1;
+    
+}

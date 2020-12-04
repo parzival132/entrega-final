@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load crispy_forms_tags %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    
+<div class="container ">
+    <div class="row">
+        <div class="col-lg-5 col-md-8 col-sm-12 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Ingresa tu usuario</h3>
+                    <form action="" method="post"  class="formulario mt-5" id="formulario">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+        
+                        <div class="btn-group btn-group-justified boton">
+                  
+                            <a href="" class="btn text-white form-control botones" id="ingresar" onclick="document.forms['formulario'].submit();return false;" >Ingresar</a>
+                            <a href="{% url 'inicio' %}" class="btn text-white form-control botones" id="regresar"> Regresar</a>
+                        </div>
+                        <div class="mt-4 text-center" >
+                        
+                        <p>¿No tienes cuenta?<a href="{% url 'registrar_usuario' %}" class="text-white ">Registrate</a></p>
+                        </div>
+                  
+                        
+                    </form>
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+</div>
+    
+</body>
+
+</html>

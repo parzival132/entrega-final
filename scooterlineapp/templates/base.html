@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>menu-scooterline</title>
+    
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagenes/favicon.png' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    
+
+</head>
+
+<body>
+{% block nav %}
+        <nav class="navegacion">
+            <div class="logo">
+                <img src="{% static 'imagenes/logo.png' %}" alt="">
+
+            </div>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="{%url 'inicio'%}" class="active">Inicio</a>
+                <a href="producto">Producto</a>
+                <a href="nosotros">¿Quienes somos?</a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Cerrar Sesion</a>
+                {% else %}
+                <a href="{% url 'login' %}">Iniciar Sesion</a>
+                {% endif %}
+
+            </div>
+        </nav>
+  {% endblock %}      
+        
+
+    {% block content %}
+
+    {% endblock %}
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block footer %}
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Numero de contacto</h4>
+                <p>646416414</p>
+            </div>
+            <div class="content-foo">
+                <h4>Correo</h4>
+                <p>capa8sa@gamil.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Direccion</h4>
+                <p>Renato sanchez 2354 las condes</p>
+            </div>
+
+        </div>
+        <h2 class="titulo-final">&copy; Scooter Line| CAPA8 S.A</h2>
+    </footer>
+    {% endblock %}
+    {% block js%}
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    {% endblock %}
+</body>
+
+</html>

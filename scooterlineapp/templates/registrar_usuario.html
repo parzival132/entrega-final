@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load crispy_forms_tags %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registar.css' %}">
+    <link rel="stylesheet" href="../static/css/registrar.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-5 mx-auto">
+                <div class="card mt-5 ">
+                    <div class="card-body ">
+                        <h2 class="card-title text-center" >formulario de registro</h2>
+                        <form action="" method="post" class="formulario" id="formulario">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div class="btn-group btn-group-justified boton">
+                  
+                                <a href="" class="btn text-white form-control botones" id="ingresar" onclick="document.forms['formulario'].submit();return false;" >Registrar</a>
+                                <a href="{% url 'inicio' %}" class="btn text-white form-control botones" id="regresar">Volver</a>
+                            </div>
+
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

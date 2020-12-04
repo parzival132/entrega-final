@@ -1,0 +1,32 @@
+body{
+    background-image: url(../imagenes/qweasd.jpg);
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+input[type="submit"]{
+    background-color: forestgreen;
+    color: ghostwhite;
+    opacity: 1;
+}
+
+.card{
+  
+    background-color: darkslategray;
+}
+
+label {
+    color: floralwhite;
+}
+h2{
+    color: floralwhite;
+}
+
+.boton {
+    width: 100%;
+}
+
+

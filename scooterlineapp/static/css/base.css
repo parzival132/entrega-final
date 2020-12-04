@@ -1,0 +1,170 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+.navegacion{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+body{
+  
+    font-family: 'raleway', sans-serif;
+    font-size: 16px;
+    height: 900px;
+}
+
+
+ nav{
+    height: 70px;
+    background: #026074;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    display: none;
+}
+
+.enlaces{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces a{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0;
+    transition: 0.5s ease-out;
+    color: white;
+    text-decoration: none;
+
+}
+
+.enlaces a:hover, .active{
+    border-top: 2px solid turquoise;
+    border-bottom: 2px solid turquoise;
+}
+
+nav .logo{
+    height: 100%;
+    background: white;
+    margin-left: 0px;
+}
+
+nav .logo img{
+    object-fit: cover;
+    height: inherit;
+}
+
+
+
+@media screen and (max-width: 750px){
+    .icono{
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+        color: black;
+        background: #136a8a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        padding: 20px;
+        z-index: 100;
+        cursor: pointer;
+        margin-right: 40px;
+    
+    }
+
+.enlaces{
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #136a8a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+    }
+
+    .uno{
+        -webkit-clip-path: circle(0% al 100% 0);
+        clip-path: circle(0% at 100% 0);
+    }
+
+    .dos{
+        -webkit-clip-path: circle(150% al 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+}
+
+@media screen and (max-width:400px){
+    nav .logo{
+        margin-left: 20px;
+    }
+    .icono{
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+/*edicion del footer*/
+
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    width: 100%;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}

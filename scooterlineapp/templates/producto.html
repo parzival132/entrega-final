@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/producto-estilo.css'%}">
+<header>
+
+    
+    <div class="textos">
+        <h1>Nuestro producto</h1>
+        <h2>Scooter line se fundó como respuesta a una pregunta simple</h2>
+        <p>¿Cómo les aseguramos a las próximas generaciones que no solo podrán
+            vivir en un planeta saludable, sino también prosperar?</p>
+
+    </div>
+    <div class="ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.99 C183.63,128.19 300.45,-4.04 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: rgb(255, 255, 255);"></path>
+        </svg></div>
+
+</header>
+
+<main>
+    <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">Diseño Scooter Line</h2>
+        <div class="contenedor-sobre-nosotros">
+            <img src="{% static 'imagenes/imagen6.jpg'%}" alt="" class="imagen-about-us">
+            <div class="contenido-textos">
+                <h3><span>1</span>Diseño liviano y adaptable</h3>
+                <p>scooterline cuenta con un diseño liviano, adaptable y comodo el cual te
+                    acompañara en tu dia a dia. Nuestro modelo de scooter esta fabricado con
+                    fibra de carbono, brindando seguridad, estavilidad y portabilidad a la hora de su uso.
+                </p>
+                <h3><span>2</span>Tu seguridad es primero</h3>
+                <p> El modelo de scooter utilizado cuenta con diversos sistemas de seguridad, como es el apartado de
+                    frenos de disco,
+                    ruedas resistentes fabricadas con caucho aderente el cual te permitira desplazarte por diversos
+                    ambientes
+                    , ya sea lluvia o terrenos con desniveles.</p>
+                <h3><span>3</span>Tiempo de uso</h3>
+                <p> Tu experiencia es importante para nosotros, por ello nuestros scooters cuentas con capacidad
+                    suficiente de bateria para que tu viaje no tenga limitaciones, contando con una bateria de 48V
+                    15Ah 720Wh
+                    la cual te brindara 60 Km.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="portafolio">
+        <div class="contenedor">
+            <h2 class="titulo">Galeria Line</h2>
+            <div class="galeria-port">
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen1.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen2.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen3.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen4.jpeg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen5.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/lyft-scooters.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen7.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+                <div class="imagen-port">
+                    <img src="{% static 'imagenes/imagen8.jpg' %}" alt="">
+                    <div class="hover-galeria">
+                        <img src="{% static 'imagenes/icono1.png' %}" alt="">
+                        <p>Nuestro producto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clientes contenedor">
+        <h2 class="titulo">Opiniones de nuestros clientes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="{% static 'imagenes/face1.jpeg' %}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Juliana Rojas</h4>
+                    <p>Me encanto la experiencia, no tube complicaciones y acorte mis tiempos considerablemente,
+                        me costara acostumbrarme pero es muy recomendable.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'imagenes/face2.jpg' %}" alt="">
+                <div class="contenido-texto-card">
+                    <h4>Rodrigo Lopez</h4>
+                    <p>Tube una grata experiencia al utilizar Scooter line, ademas de destacar la comodidad, tambien
+                        la rapides.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-services">
+        <div class="contenedor">
+            <h2 class="titulo">Recomendaciones de uso</h2>
+            <div class="servicio-cont">
+
+                <div class="servicio-ind">
+                    <img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-3.jpg" alt="">
+                    <h3>verificacion</h3>
+                    <p>verificar el estado del scooter antes de utilizar es una buena practica para evitar
+                        incidentes.</p>
+                </div>
+                <div class="servicio-ind">
+                    <img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-5.jpg" alt="">
+                    <h3>Cuidado</h3>
+                    <p>por tu seguridad evita terrenos quebradizos o en mal estado.</p>
+                </div>
+                <div class="servicio-ind">
+                    <img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-6.jpg" alt="">
+                    <h3>Transito</h3>
+                    <p>con el fin de prevenir accidentes, respeta las señaleticas de transito. </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+{% endblock %}

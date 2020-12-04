@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/quienes-somos.css' %}">
+<header>
+<div class="textos">
+    <h1 class="titulo">Quienes Somos.</h1>
+    <h3 class="subtitulo">scooterline</h3>
+ 
+</div>
+<div class="sesgoabajo"></div>
+
+
+</header>
+<main>
+<section class="acerca-de">
+    <div class="contenedor">
+        <h2 class="sobre-nosotros">sobre nosotros.</h2>
+        <h3 class="slogan">Somos soñadores y hacedores.</h3>
+        <p class="parrafo">Creemos en cuestionar el orden establecido y en la mejora continua. Y nuestros miembros provienen de diferentes áreas: emprendedores, veteranos, estudiantes, directores de cine, diseñadores, ingenieros, creativos, ambientalistas y más.</p>
+        <p class="parrafo">Scooterline no es solo una compañía tecnológica de movilidad. En primer lugar, somos una compañía orientada a las personas y a las relaciones. Estamos comprometidos a construir con usted y para usted.</p>
+        <a href="#" class="boton">suscribete</a>
+
+    </div>
+</section>
+<section class="galeria">
+ <div class="sesgoarriba"></div>
+   <div class="imagenes">
+       <img src="{% static 'imagenes/galeria2.1.jpg' %}" alt="">
+    </div>
+   <div class="imagenes">
+       <img src="{% static 'imagenes/galeria2.2.png' %}" alt="">
+    </div>
+   <div class="imagenes">
+       <img src="{% static 'imagenes/galeria2.3.jpg' %}" alt="">
+       <div class="encima">
+        <h2>Equipo Line</h2>
+        <div></div>
+    </div>
+    </div>
+   <div class="imagenes">
+       <img src="{% static 'imagenes/galeria2.5.jpg' %}" alt="">
+       
+    </div>
+   <div class="imagenes">
+       <img src="{% static 'imagenes/galeria2.6.jpg' %}" alt="">
+    </div>
+    <div class="sesgoabajo"></div>
+</section>
+<section class="miembros">
+    <div class="contenedor">
+        <h2 class="sobre-nosotros">nuestro equipo</h2>
+        <h3 class="slogan">conoce a nuestro equipo de trabajo</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="{% static 'imagenes/nuestro equipo4.jpg' %}" alt="">
+                <h4>Ignacio Vasquez</h4>
+                <p>Cofundador y Director general</p>
+            </div>
+            <div class="card">
+                <img src="{% static 'imagenes/nuestro equipo5.jpg' %}" alt="">
+                <h4>Tomas Stuardo</h4>
+                <p>Lider de Operaciones</p>
+            </div>
+            <div class="card">
+                <img src="{% static 'imagenes/nuestro equipo3.jpg' %}" alt="">
+                <h4>Moises Lagos</h4>
+                <p>Director de Desarrollo</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fondo">
+    <div class="sesgoarriba"></div>
+        <div class="contenedor">
+            <h2 class="titulo-patrocinadores">Patrocinadores</h2>
+            <h3 class="subtitulo-patrocinadores">Conoce a nuestros patrocinadores principales.</h3>
+            <div class="clientes">
+                <div class="cliente"><img src="{% static 'imagenes/patrocinador 5.jpg' %}" alt=""></div>
+                <div class="cliente"><img src="{% static 'imagenes/patrocinador 5.jpg' %}" alt=""></div>
+                <div class="cliente"><img src="{% static 'imagenes/patrocinador 5.jpg' %}" alt=""></div>
+            </div>
+            <h3 class="subtitulo-patrocinadores especial">y muchos mas patrocinadores...</h3>
+
+        </div>
+   
+
+    
+</section>
+</main>
+{% endblock %}
